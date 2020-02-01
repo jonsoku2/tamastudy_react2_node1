@@ -31,7 +31,7 @@ const Button: React.FC<Props> = ({ text, onClick, ...rest }) => {
     update: theme.color.primary.white.almost,
     reservation: theme.color.primary.white.almost,
     cancel: theme.color.primary.white.almost,
-    close: theme.color.primary.white.almost
+    close: theme.color.primary.white.almost,
   };
   const buttonColorMapping = {
     registry: theme.color.material.teal,
@@ -42,7 +42,7 @@ const Button: React.FC<Props> = ({ text, onClick, ...rest }) => {
     update: theme.color.material.teal,
     reservation: theme.color.material.teal,
     cancel: theme.color.system.red,
-    close: theme.color.system.red
+    close: theme.color.system.red,
   };
   return (
     <button
@@ -55,8 +55,8 @@ const Button: React.FC<Props> = ({ text, onClick, ...rest }) => {
       <div
         css={css`
           box-sizing: border-box;
-          color: ${onClick ? fontColorMapping[text] : theme.color.text.dark3};
-          background-color: ${onClick ? buttonColorMapping[text] : theme.color.icon.darkInactive};
+          color: ${fontColorMapping[text]};
+          background-color: ${buttonColorMapping[text]};
           padding: 1.1rem 1.5rem;
           border-radius: 15px;
           text-transform: uppercase;

@@ -4,7 +4,7 @@ import { Global, css } from '@emotion/core';
 const GlobalStyles = () => (
   <Global
     styles={css`
-      @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
       html {
         line-height: 1.15; /* 1 */
         -webkit-text-size-adjust: 100%; /* 2 */
@@ -13,7 +13,7 @@ const GlobalStyles = () => (
 
       body {
         margin: 0;
-        font-family: 'Varela Round', sans-serif;
+        font-family: 'Roboto', sans-serif;
       }
 
       main {

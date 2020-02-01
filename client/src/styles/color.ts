@@ -1,6 +1,3 @@
-{
-  /* https://calcolor.co/ */
-}
 const color = {
   primary: {
     black: {
@@ -8,7 +5,7 @@ const color = {
       almost: '#111111',
       tinted: '#222222',
       light: '#444444',
-      pale: '#555555,'
+      pale: '#555555,',
     },
     grey: {
       shaded: '#666666',
@@ -16,13 +13,13 @@ const color = {
       tinted: '#888888',
       light: '#999999',
       pale: '#aaaaaa',
-      silver: '#bbbbbb'
+      silver: '#bbbbbb',
     },
     white: {
       primary: '#ffffff',
       almost: '#eeeeee',
       shaded: '#dddddd',
-      dark: '#cccccc'
+      dark: '#cccccc',
     },
     beige: '#EBDDCA',
     rose: '#f38181',
@@ -42,7 +39,7 @@ const color = {
     red3: '#ea4335',
     red4: '#bc0024',
     orange: '#f7931e',
-    orange2: '#fa9f1e'
+    orange2: '#fa9f1e',
   },
   material: {
     red: '#f44336',
@@ -63,7 +60,7 @@ const color = {
     deepOrange: '#ff5722',
     brown: '#795548',
     gray: '#9e9e9e',
-    blueGray: '#607d8b'
+    blueGray: '#607d8b',
   },
   pastel: {
     blushPink: '#ff8080',
@@ -77,7 +74,7 @@ const color = {
     periwinkle: '#8080ff',
     lightPurple: '#c080ff',
     purplyPink: '#ff80ff',
-    pink: '#ff80c0'
+    pink: '#ff80c0',
   },
   text: {
     dark: '#111111',
@@ -87,14 +84,14 @@ const color = {
     light: '#ffffff',
     light2: '#969696',
     light3: '#757575',
-    lightEtc: '#5a5a5a'
+    lightEtc: '#5a5a5a',
   },
   system: {
     red: '#d32f2f',
     yellow: '#f9a825',
     green: '#4caf50',
     blue: '#0091ea',
-    grey: '#eeeeee'
+    grey: '#eeeeee',
   },
   icon: {
     darkFocused: 'rgba(0, 0, 0, 0.87)',
@@ -102,12 +99,12 @@ const color = {
     darkInactive: 'rgba(0, 0, 0, 0.38)',
     lightFocused: 'rgba(255, 255, 255, 1)',
     lightUnfocused: 'rgba(255, 255, 255, 0.70)',
-    lightInactive: 'rgba(255, 255, 255, 0.50)'
+    lightInactive: 'rgba(255, 255, 255, 0.50)',
   },
   background: {},
   brand: {
-    line: '#00c300'
-  }
+    line: '#00c300',
+  },
 };
 
 export default color;

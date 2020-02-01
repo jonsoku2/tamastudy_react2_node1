@@ -3,11 +3,11 @@ import Typography from '.';
 
 export default {
   title: 'atoms|Typography',
-  component: Typography
+  component: Typography,
 };
 
 export const Summary = () => (
   <>
-    <Typography />
+    <Typography variant="body1">1234</Typography>
   </>
 );
