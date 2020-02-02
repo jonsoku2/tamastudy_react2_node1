@@ -20,7 +20,7 @@ interface Props {
 // onClick 함수가 있을 때 : active
 // onClick 함수가 없을 때 : inActive
 
-const Button: React.FC<Props> = ({ text, onClick, ...rest }) => {
+const BackupButton: React.FC<Props> = ({ text, onClick, ...rest }) => {
   const theme = useTheme();
   const fontColorMapping = {
     registry: theme.color.primary.white.almost,
@@ -76,4 +76,4 @@ const Button: React.FC<Props> = ({ text, onClick, ...rest }) => {
   );
 };
 
-export default Button;
+export default BackupButton;
