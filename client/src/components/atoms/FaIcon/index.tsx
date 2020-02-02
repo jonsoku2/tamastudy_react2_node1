@@ -11,7 +11,7 @@ interface Props {
   onClick?: () => void;
 }
 
-const Icon: React.FC<Props> = ({ icon, spin, size, color, onClick, ...rest }) => {
+const FaIcon: React.FC<Props> = ({ icon, spin, size, color, onClick, ...rest }) => {
   return (
     <FontAwesomeIcon
       icon={Icons[icon]}
@@ -24,4 +24,4 @@ const Icon: React.FC<Props> = ({ icon, spin, size, color, onClick, ...rest }) =>
   );
 };
 
-export default Icon;
+export default FaIcon;
