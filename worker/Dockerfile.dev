@@ -1,6 +1,9 @@
 FROM node:alpine
-WORKDIR '/app'
-COPY ./package.json ./
-RUN npm install
+RUN mkdir -p /tmp
+COPY package.json /tmp
+RUN cd /tmp && npm install
+ENV PATH /tmp/node_modules/.bin:${PATH}
+
+WORKDIR /app
 COPY . .
-CMD ["npm", "run", "dev"]
+CMD rm -rf node_modules && ln -s /tmp/node_modules/ node_modules && npm run dev
