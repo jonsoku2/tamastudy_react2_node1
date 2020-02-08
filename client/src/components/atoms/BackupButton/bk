@@ -1,0 +1,15 @@
+css`
+                    box-sizing: border-box;
+                    color: ${fontColorMapping[text]};
+                    background-color: ${buttonColorMapping[text]};
+                    padding: 1.3rem 2.8rem;
+                    border-radius: 4px;
+                    text-transform: uppercase;
+                    box-shadow: 2px 2px 28px 0px rgba(0, 0, 0, 0.39);
+                    font-size: 1.3rem;
+                    transition: opacity 0.4s;
+                    line-height: 1;
+                    &:hover {
+                        opacity: 0.95;
+                    }
+                `
