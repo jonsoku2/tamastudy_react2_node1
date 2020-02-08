@@ -1,14 +1,9 @@
-import React from 'react';
-import Button from '../../components/atoms/Button/index';
-import Typography from '../../components/atoms/Typography';
+import React from 'react'
 
-const HomeMainContainer = () => {
-  return (
-    <div>
-      <Typography variant="h1">안녕하세요</Typography>
-      <Button text="registry" onClick={() => alert('registry')} />
-    </div>
-  );
-};
+interface Props {}
 
-export default HomeMainContainer;
+const HomeMainContainer: React.FC<Props> = () => {
+    return <div>123</div>
+}
+
+export default HomeMainContainer
