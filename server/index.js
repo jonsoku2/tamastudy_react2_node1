@@ -1,25 +1,23 @@
-const express = require('express');
+const express = require('express'); //import express from 'express'
 const morgan = require('morgan');
+const router = require('./routes/index');
+const errorResponse = require('./middlewares/errorResponse');
+const colors = require('colors');
 require('dotenv').config();
-
 const app = express();
 
-// Dev logging middleware
-if (process.env.NODE_ENV === 'development') {
-  app.use(morgan('dev'));
-}
+//const port = process.env.PORT;
 
-app.get('/', (req, res) => {
-  res.json({ success: true, message: '접속완료' });
-});
+console.log(app);
 
-const server = app.listen(process.env.PORT, () =>
-  console.log(`${process.env.PORT}번으로 Node API 가동 중입니다. `),
-);
+app.use(morgan('dev'));
 
-// Handle unhandled promise rejections 처리되지 않은 약속 거부 처리
-process.on('unhandledRejection', (err, promise) => {
-  console.log(`Error: ${err.message}`.red);
-  // Close server & exit process
-  server.close(() => process.exit(1));
+//routes
+app.use(router);
+
+//error response middleware
+app.use(errorResponse);
+
+app.listen(process.env.PORT, () => {
+  console.log(`${process.env.PORT} is mounted`.bgCyan.blue);
 });

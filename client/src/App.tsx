@@ -5,6 +5,7 @@ import GlobalStyles from './styles/GlobalStyles';
 import history from './history';
 import { Router, Route, Switch } from 'react-router-dom';
 import HomeMainContainer from './pages/Home/HomeMainContainer';
+import Post from './pages/Post/index';
 
 interface Props {}
 
@@ -14,7 +15,8 @@ const App: React.FC<Props> = () => {
       <GlobalStyles />
       <Router history={history}>
         <Switch>
-          <Route exact path="/" component={HomeMainContainer} />
+          <Route exact path='/' component={HomeMainContainer} />
+          <Route exact path='/post' component={Post} />
         </Switch>
       </Router>
     </ThemeProvider>
